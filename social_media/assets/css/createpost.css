@@ -1,0 +1,134 @@
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+
+/* Instagram-style post card */
+.post-card {
+    background: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: auto auto;
+}
+
+.post-card h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Textarea styling */
+.post-card textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+}
+
+/* File upload button */
+.upload-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #f5f5f5;
+    color: #555;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.upload-btn i {
+    font-size: 18px;
+    color: #6200ea;
+}
+
+/* Post button */
+.post-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    background: #6200ea;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.post-btn:hover {
+    background: #3700b3;
+}
+
+/* Floating Button for Adding a New Post */
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #6200ea;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.floating-btn:hover {
+    background: #3700b3;
+    transform: scale(1.1);
+}
+/* Preview Container */
+.preview-container {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Image Preview */
+.preview-container img, .preview-container video {
+    max-width: 100%;
+    max-height: 250px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: block;
+}
+
+/* Remove Preview Button */
+.remove-preview {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    font-size: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}

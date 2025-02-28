@@ -1,0 +1,59 @@
+/* Friends List Page Container */
+.friends-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title */
+.friends-container h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Friends Grid */
+.friends-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Friend Card */
+.friend {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.friend:hover {
+    background: #f1f1f1;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Friend Profile Picture */
+.friend img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #007bff;
+}
+
+/* Friend Name */
+.friend p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}

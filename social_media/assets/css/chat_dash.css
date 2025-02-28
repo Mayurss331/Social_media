@@ -1,0 +1,151 @@
+/* Chat Page Container */
+.chat-container {
+    width: 60%;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Title */
+.chat-container h2, .chat-container h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* Chat User List */
+.chat-user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual User Item */
+.chat-user {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.chat-user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #007bff;
+}
+
+.chat-user span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Hover Effect */
+.chat-user:hover {
+    background: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chat-container {
+        width: 90%;
+    }
+}
+/* Chat Page Container */
+.chat-container {
+    width: 60%;
+    margin: 50px auto;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Title */
+.chat-container h2, .chat-container h3 {
+    text-align: center;
+    color: #333;
+}
+.chat-container h2{
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    width: 95%;
+}
+
+/* Chat User List */
+.chat-user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual User Item */
+.chat-user {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+/* User Profile Picture */
+.chat-user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+    border: 2px solid #007bff;
+}
+
+/* Chat User Info */
+.chat-user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+/* Username */
+.chat-username {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Last Message */
+.chat-last-message {
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+/* Hover Effect */
+.chat-user:hover {
+    background: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chat-container {
+        width: 90%;
+    }
+
+    .chat-last-message {
+        max-width: 150px;
+    }
+}
+

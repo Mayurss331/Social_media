@@ -1,0 +1,61 @@
+/* Center the form */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6200ea, #3700b3);
+    font-family: Arial, sans-serif;
+}
+
+/* Login Container */
+.login-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Form Inputs */
+.login-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Submit Button */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+    background: #3700b3;
+}
+
+/* Sign-up Link */
+.login-container p {
+    margin-top: 10px;
+}
+
+.login-container a {
+    color: #6200ea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}

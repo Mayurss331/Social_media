@@ -1,0 +1,91 @@
+/* Global Styles */
+body {
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #6200ea;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3700b3;
+}
+
+/* Logout Button */
+.logout-btn {
+    display: inline-block;
+    margin: 0 auto 20px;
+    padding: 10px 15px;
+    background: #dc3545;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #c82333;
+}
+
+/* Dashboard Section Container */
+.dashboard-section {
+    margin: 30px 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Section Header */
+.dashboard-section h3 {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Table Container (for spacing) */
+.table-container {
+    padding: 15px;
+}

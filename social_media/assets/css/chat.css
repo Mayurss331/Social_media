@@ -1,0 +1,135 @@
+/* Chat Page Container */
+.chat-container {
+    min-height: 90vh;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Header */
+.chat-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+}
+
+.chat-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+}
+
+.chat-header h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Chat Box */
+#chat-box {
+    min-height: 75vh;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Chat Messages */
+.chat-message {
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+/* Sent Messages */
+.chat-message.sent {
+    align-self: flex-end;
+    background: #007bff;
+    color: #fff;
+    border-bottom-right-radius: 0;
+}
+
+/* Received Messages */
+.chat-message.received {
+    align-self: flex-start;
+    background: #e0e0e0;
+    color: #333;
+    border-bottom-left-radius: 0;
+}
+
+/* Message Time */
+.chat-time {
+    font-size: 12px;
+    opacity: 0.7;
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+}
+
+/* Chat Form */
+#chat-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#message {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#chat-form button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+#chat-form button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chat-container {
+        width: 90%;
+    }
+
+    .chat-message {
+        max-width: 90%;
+    }
+}
+/* Back Button (Icon Only) */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background: url('../images/back-button.png') no-repeat center center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.back-button:hover {
+    transform: scale(1.1);
+}

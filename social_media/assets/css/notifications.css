@@ -1,0 +1,90 @@
+/* Notifications Container */
+.notifications-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Notification Card */
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.notification:hover {
+    background: #f1f1f1;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Unread Notification */
+.notification.unread {
+    background: #eaf6ff;
+    border-left: 4px solid #007bff;
+}
+
+/* Notification Icon */
+.notification-icon i {
+    font-size: 24px;
+    color: #007bff;
+}
+
+/* Notification Text */
+.notification p {
+    margin: 0;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+/* Notification Link */
+.notification-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.notification-link:hover {
+    color: #007bff;
+}
+
+/* Mark as Read Button */
+.mark-read {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.mark-read:hover {
+    background: #0056b3;
+}
+/* Back Button (Icon Only) */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background: url('../images/back-button.png') no-repeat center center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.back-button:hover {
+    transform: scale(1.1);
+}
